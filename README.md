@@ -21,7 +21,7 @@ Ao final desse treinamento o aluno estará capacitado para administrar a platafo
 9. App My Fluig
 10. Instalação e configuração da IDE Eclipse
 
-## Escopo dia 2 e 3
+## Escopo dias 2 e 3
 - Formulários responsivos
 - Conectando ao servidor
 - Modelagem de Processo
