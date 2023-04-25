@@ -11,15 +11,26 @@ Ao final desse treinamento o aluno estará capacitado para administrar a platafo
 ## Escopo dia 1
 
 1. Instalação
-2. usuário wcmadmin e criação de empresa
-3. visão geral da plataforma
+2. Usuário wcmadmin e criação de empresa
+3. Visão geral da plataforma
 4. Painel de Controle
 5. Social
 6. GED
 7. Processos
-8. Instalação e configuração da IDE Eclipse
+8. App My Fluig
+9. Instalação e configuração da IDE Eclipse
 
 ## Escopo dia 2 e 3
+- Formulários responsivos
+- Conectando ao servidor
+- Modelagem de Processo
+- Criação de processo para Cadastro de Clientes
+- Eventos de Formulário e Processos
+- Criação de Banco de Dados para cadastro de Clientes
+- Integração JDBC com banco criado
+- Criação processo de Cotaçaõ de Produto para os Clientes inseridos no processo anterior
+- Dataset consumindo dados externos
+- Debug Font-End e Back-End
 
 ## Links Importantes/Interessantes
 - [Style Guide](https://style.fluig.com/components.html)
