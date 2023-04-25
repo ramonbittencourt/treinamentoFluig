@@ -10,15 +10,16 @@ Ao final desse treinamento o aluno estará capacitado para administrar a platafo
 
 ## Escopo dia 1
 
-1. Instalação
-2. Usuário wcmadmin e criação de empresa
-3. Visão geral da plataforma
-4. Painel de Controle
-5. Social
-6. GED
-7. Processos
-8. App My Fluig
-9. Instalação e configuração da IDE Eclipse
+1. Overview da Plataforma
+2. Instalação
+3. Usuário wcmadmin e criação de empresa
+4. Visão geral da plataforma
+5. Painel de Controle
+6. Social
+7. GED
+8. Processos
+9. App My Fluig
+10. Instalação e configuração da IDE Eclipse
 
 ## Escopo dia 2 e 3
 - Formulários responsivos
