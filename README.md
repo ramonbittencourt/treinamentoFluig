@@ -22,7 +22,6 @@ Ao final desse treinamento o aluno estará capacitado para administrar a platafo
 10. Instalação e configuração da IDE Eclipse
 
 ## Escopo dias 2 e 3
-- Formulários responsivos
 - Conectando ao servidor
 - Modelagem de Processo
 - Criação de processo para Cadastro de Clientes
@@ -40,3 +39,4 @@ Ao final desse treinamento o aluno estará capacitado para administrar a platafo
 - [Fluiggers](https://fluiggers.com.br/)
 - [APIs](https://api.fluig.com/latest/index.html)
 - [Git](https://git.fluig.com/projects/SAMPLES)
+- [Grupo Telegram](https://t.me/fluig)
