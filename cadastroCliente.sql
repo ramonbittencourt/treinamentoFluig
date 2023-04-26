@@ -1,0 +1,10 @@
+CREATE TABLE clientes (
+  id INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+  nome VARCHAR(255) NOT NULL,
+  endereco VARCHAR(255) NOT NULL,
+  bairro VARCHAR(100) NOT NULL,
+  cidade VARCHAR(50) NOT NULL,
+  estado VARCHAR(2) NOT NULL,
+  status CHAR(1) NOT NULL,
+  cep VARCHAR(10)
+);
