@@ -1,0 +1,91 @@
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="/style-guide/css/fluig-style-guide.min.css"/>
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+		<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+		<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
+		<script type="text/javascript" src="/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+		<script type="text/javascript" src="js/funcoes.js" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="fluig-style-guide">
+			<form name="form" role="form">
+				
+				<div class="row">
+					<div class="col-sm-12">
+					&nbsp;
+					</div>
+				</div>
+		        
+		        <div class="tab-pane fade in">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="text-center">Cadastro Cliente</h3>
+						</div>
+						<div class="panel-body fs-lg-margin-horizontal">   
+							<div class="row">
+								<div class="col-sm-2">
+									<label for="codCliente" class="required">Código</label>
+									<input type="number" name="codCliente" id="codCliente" class="form-control" readonly>
+								</div>
+								<div class="col-sm-8">
+									<label for="nomeCliente" class="required">Nome</label>
+									<input type="text" name="nomeCliente" id="nomeCliente" class="form-control">
+								</div>
+								<div class="col-sm-2">
+									<label for="statusCliente" class="required">Status</label>
+									<select name="statusCliente" id="statusCliente" class="form-control">
+										<option value=""></option>
+										<option value="A">Ativo</option>
+										<option value="I">Inativo</option>
+									</select>
+								</div> 	
+							</div>
+							
+							<div class="row">
+								<div class="col-sm-12">
+									&nbsp;
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-sm-2">
+						   			<label for="cepCliente" class="required">CEP</label>   	 
+						   			<input name="cepCliente" id="cepCliente" type="text" class="form-control" mask="00000-000" onblur="buscaCep()">
+						   		</div>			   		
+						   		
+						   		<div class="col-sm-4">
+						   			<label for="enderecoCliente" class="required">Endereço</label>   	 
+						   			<input name="enderecoCliente" id="enderecoCliente" type="text" class="form-control">
+						   		</div>
+						   		
+						   		<div class="col-sm-2">
+						   			<label for="bairroCliente" class="required">Bairro</label>
+						   			<input name="bairroCliente" id="bairroCliente" type="text" class="form-control">				    	
+						   		</div>
+						   		
+						   		<div class="col-sm-2">
+						   			<label for="cidadeCliente" class="required">Cidade</label>
+						   			<input name="cidadeCliente" id="cidadeCliente" type="text" class="form-control">
+						   		</div>	
+						   		<div class="col-sm-1">
+						   			<label for="estadoCliente" class="required">UF</label>
+						   			<input name="estadoCliente" id="estadoCliente" type="text" class="form-control">
+						   		</div>		
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-sm-12">
+						&nbsp;
+					</div>
+				</div>			
+								    
+			</form>
+		</div>
+	</body>
+</html>

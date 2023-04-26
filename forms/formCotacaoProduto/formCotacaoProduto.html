@@ -1,0 +1,146 @@
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="/style-guide/css/fluig-style-guide.min.css"/>
+		<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+		<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
+		<script type="text/javascript" src="/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+		<script type="text/javascript" src="js/funcoes.js"></script>
+		<script type="text/javascript" language="javascript" src="js/zoom.js"></script>
+	</head>
+
+	<body>
+		<div class="fluig-style-guide">
+			<form name="form" role="form">
+				
+				<div class="row">
+					<div class="col-sm-12">
+					&nbsp;
+					</div>
+				</div>
+				    
+				<div class="row" style="background:#424242; text-align:center">
+					<div class="col-sm-12">		    
+						<font color="#FFFFFF" ><h1><strong>Cotação</strong></h1></font>
+					</div>
+				</div>
+				    
+				<div class="row">
+					<div class="col-sm-12">
+						&nbsp;
+					</div>
+				</div>
+				
+				<div class="row">     
+					<div class="col-sm-6">
+						<label for="nomeCliente">Cliente</label>
+						<div class="input-group">
+							<input name="codCliente" id="codCliente" type="hidden" class="form-control" readonly>
+						   	<input name="nomeCliente" id="nomeCliente" type="text" class="form-control" readonly>
+						   	<span id="btnCliente" class="input-group-addon group-zoom no-view zoom-click btn-info" data-event="cliente">
+							   	<span class="fluigicon fluigicon-zoom-in "></span>
+							</span>		
+						</div>					
+					</div>
+					<div class="col-sm-5 divCustos">
+						<label for="obsCotacao">Observação Custos</label>
+						<textarea class="form-control" rows="3" name="obsCotacao" id="obsCotacao"></textarea>
+					</div>	
+				</div>					
+				
+				<div class="row">
+					<div class="col-sm-12">
+						&nbsp;
+					</div>
+				</div>
+								
+				<div class="row">     
+					<div class="col-sm-2 col-md-offset-10">
+						<label for="codCotacao">Cotação</label>
+						<input type="text" name="codCotacao" id="codCotacao" class="form-control">
+					</div>  	
+				</div>
+
+				
+				<div class="row">
+					<div class="col-sm-12">
+						<table class="table table-condensed table-nonfluid table-striped" id="tbItens" tablename="tbItens" noaddbutton="true" customFnDelete="itemremove(this)" >
+							<thead>
+								<tr>
+									<th>Código</th>
+									<th>Produto</th>
+									<th>Valor</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr detail="true" detailname="tbItens" >
+									<td class="col-sm-3">
+										<input id="codItem" name="codItem" class="form-control" type="text"/>
+									</td>							
+									<td class="col-sm-6" >
+										<input id="produtoItem" name="produtoItem" class="form-control" type="text" />
+									</td> 
+									<td class="col-sm-3">
+										<input id="valorItem" name="valorItem" class="form-control" mask="#00.000.000.000.000,00" type="text"/>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					    <button type="button" class="btn btn-primary" id="addActivityButton" data-toggle="button" onclick="addProduto()">Adicionar Item</button>				
+					</div>
+				</div>
+				
+				<div class=row>
+					<div class="col-sm-12">
+						&nbsp;
+					</div>
+				</div>
+				
+				<div id="aprovacaoCliente">
+					<div class="row">
+						<div class="col-sm-12">
+							<fieldset id="fieldset-b" style="width: 100%;">
+								<div class="mgt-30">
+									<div class="panel panel-default">
+										<div class="panel-heading gradient">
+											<h5>Aprovação Cliente</h5>
+										</div>
+										<div class="panel-body">
+											<!-- CONTEUDO   -->	
+											<div class="row">
+												<div class="col-sm-2 custom-radio custom-radio-primary">
+													<input type="radio" name="retornoCliente" value="S" id="cotacaoSim">
+													<label for="cotacaoSim">Aprovado</label>
+												</div>
+												<div class="col-sm-2 custom-radio custom-radio-primary">
+												    <input type="radio" name="retornoCliente" value="N" id="cotacaoNao">
+													<label for="cotacaoNao">Reprovado</label>
+												</div>
+												<div class="col-sm-2 custom-radio custom-radio-primary">
+												    <input type="radio" name="retornoCliente" value="C" id="cotacaoNova">
+													<label for="cotacaoNova">Nova Cotação</label>
+												</div>
+												<div class="col-sm-6">
+													<label for="obsCliente">Observação</label>
+													<textarea class="form-control" rows="3" name="obsCliente" id="obsCliente"></textarea>
+												</div>
+											</div>
+											<!-- /CONTEUDO  -->
+										</div>
+									</div>
+								</div>
+							</fieldset>
+						</div>								
+					</div>
+					<div class=row>
+						<div class="col-sm-12">
+							&nbsp;
+						</div>
+					</div>
+							
+				</div>			
+								    
+			</form>
+		</div>
+	</body>
+</html>
