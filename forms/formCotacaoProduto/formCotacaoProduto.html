@@ -6,7 +6,7 @@
 		<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
 		<script type="text/javascript" src="/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
 		<script type="text/javascript" src="js/funcoes.js"></script>
-		<script type="text/javascript" language="javascript" src="js/zoom.js"></script>
+		<!-- <script type="text/javascript" language="javascript" src="js/zoom.js"></script> -->
 	</head>
 
 	<body>
@@ -32,7 +32,7 @@
 				</div>
 				
 				<div class="row">     
-					<div class="col-sm-6">
+					<!-- <div class="col-sm-6">
 						<label for="nomeCliente">Cliente</label>
 						<div class="input-group">
 							<input name="codCliente" id="codCliente" type="hidden" class="form-control" readonly>
@@ -41,6 +41,26 @@
 							   	<span class="fluigicon fluigicon-zoom-in "></span>
 							</span>		
 						</div>					
+					</div> -->
+					<div class="col-sm-4" >
+						<label for="nomeCliente">Cliente</label>   	
+						<input type="zoom" id="nomeCliente" name="nomeCliente"  data-zoom="{
+						        'displayKey':'NOME',
+						        'datasetId':'dsBuscaClienteTreinamento',
+						        'placeholder':'Escolha o Cliente',
+						        'fields':[
+						            {
+						               'field':'ID',
+						               'label':'ID'
+						            },{
+						              'field':'NOME',
+						              'label':'Nome',
+						              'standard':'true'
+						            }
+						        ]
+						     }"
+						/> 
+						<input type="hidden" name="codCliente" id="codCliente" class="form-control">
 					</div>
 					<div class="col-sm-5 divCustos">
 						<label for="obsCotacao">Observação Custos</label>
@@ -64,7 +84,7 @@
 				
 				<div class="row">
 					<div class="col-sm-12">
-						<table class="table table-condensed table-nonfluid table-striped" id="tbItens" tablename="tbItens" noaddbutton="true" customFnDelete="itemremove(this)" >
+						<table class="table table-condensed table-nonfluid table-striped" id="tbItens" tablename="tbItens" noaddbutton="true" customFnDelete="fnWdkRemoveChild(this)" >
 							<thead>
 								<tr>
 									<th>Código</th>

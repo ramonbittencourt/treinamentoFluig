@@ -5,7 +5,10 @@ function addProduto() {
 	$('#codItem___'+row).attr('disabled',true);
 	$('#valorItem___'+row).attr('disabled',true);
 }
-	
-function itemremove(oElement){
-   	fnWdkRemoveChild(oElement);
+
+//FUNÇÃO AO SELECIONAR ALGUMA OPÇÃO DE QUALQUER CAMPO ZOOM
+function setSelectedZoomItem(selectedItem) {
+	if(selectedItem.inputId == "nomeCliente"){
+    	$("#codCliente").val(selectedItem.ID);
+    }
 }
